@@ -1,5 +1,7 @@
 package miniProjekat;
 
+import java.util.Scanner;
+
 public class Zadatak4 {
 //    Zamena Vrednosti u Locust Komandi**
 //
@@ -42,6 +44,16 @@ public class Zadatak4 {
 //    Komanda: locust -f login_stress_test.py -u 1000 -r 5  -t 100 --headless –host  https://cms.demo.katalon.com/ --html login_stress_report.html
 
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String komanda = "locust -f $LOCUSTFILE -u $NUMBER_OF_USERS -r $SPAWN_RATE -t $RUN_TIME --headless –host $HOST --html $HTML_FILE";
 
+while (komanda.contains("$")) {
+    System.out.println(komanda);
+    System.out.print("Unesite naziv promenljive za zamenu: ");
+    String promenljiviDelovi= s.next();
+    System.out.print("Unesite vrednost: ");
+    String novaVrednost = s.next();
+    komanda = komanda.replace(promenljiviDelovi, novaVrednost);
+}
     }
 }

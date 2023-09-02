@@ -1,5 +1,7 @@
 package miniProjekat;
 
+import java.util.ArrayList;
+
 public class Zadatak3 {
 //    Zamena Placeholdera u SQL Upitu**
 //
@@ -34,6 +36,23 @@ public class Zadatak3 {
 //    Napomena: Smatrajte da se broj placeholdera podudara sa brojem elemenata u nizu.
 
     public static void main(String[] args) {
+        ArrayList <String> placeholder = new ArrayList<>();
+
+        String sqlUpit = "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('%0', '%1', '%2', '%3', '%4', '%5');";
+        placeholder.add("Cardinal ");
+        placeholder.add("Tom. B Erichsen ");
+        placeholder.add("Skagen 21");
+        placeholder.add("Stavanger");
+        placeholder.add("4006");
+        placeholder.add("Norway");
+
+for (int i = 0; i < placeholder.size(); i ++) {
+    sqlUpit = sqlUpit.replace("%" + i, placeholder.get(i));
+}
+
+
+        System.out.println(sqlUpit);
+
 
     }
 }

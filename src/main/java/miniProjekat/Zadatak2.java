@@ -1,5 +1,7 @@
 package miniProjekat;
 
+import java.util.ArrayList;
+
 public class Zadatak2 {
 //    Simulacija iscrtavanja korisnika na Slacku**
 //
@@ -42,5 +44,34 @@ public class Zadatak2 {
 
     public static void main(String[] args) {
 
+        ArrayList <String> korisnici = new ArrayList<>();
+        ArrayList <Boolean> aktivnosti = new ArrayList<>();
+
+        korisnici.add("Pera Peric");
+        korisnici.add("Darko Darkovic");
+        korisnici.add("Marko Markovic");
+        korisnici.add("Stefan Stefanovic");
+        korisnici.add("Uros Urosevic");
+        korisnici.add("Milan Milanovic");
+
+        aktivnosti.add(true);
+        aktivnosti.add(false);
+        aktivnosti.add(true);
+        aktivnosti.add(true);
+        aktivnosti.add(false);
+        aktivnosti.add(true);
+
+     for (int i = 0; i < korisnici.size(); i++) {
+         if(aktivnosti.get(i)== true) {
+             System.out.println(" | slika | o " + korisnici.get(i));
+         }
+
+     }
+     for (int i = 0; i < korisnici.size(); i++) {
+         if(aktivnosti.get(i)== false) {
+             System.out.println(" | slika | x " + korisnici.get(i));
+         }
+
+     }
     }
 }

@@ -1,5 +1,7 @@
 package miniProjekat;
 
+import java.util.Scanner;
+
 public class Zadatak1 {
 
 
@@ -42,6 +44,25 @@ public class Zadatak1 {
 //    Napomena: Posto je procenat realan broj, u stampi ce se prikazati vise cifara iza zareza.
 
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Unesite velicinu fajla: ");
+        int velicinaFajla = s.nextInt();
+        int brojInteracija = velicinaFajla / 5;
+        String sadrzajFajla = "";
+
+        if (velicinaFajla % 5 != 0) {
+            brojInteracija = brojInteracija + 1;
+        }
+        for (int i = 0; i < brojInteracija; i++) {
+            System.out.print("Unesite paket: ");
+            String paket = s.next();
+            sadrzajFajla = sadrzajFajla + paket;
+            double skinutiProcenat = sadrzajFajla.length() * 100.0 / velicinaFajla;
+            System.out.println("Skinuto: " + skinutiProcenat + "%");
+        }
+        System.out.print("Sadrzaj fajla je: " + sadrzajFajla);
+
 
     }
 }
