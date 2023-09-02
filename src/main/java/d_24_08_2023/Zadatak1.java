@@ -29,10 +29,10 @@ public class Zadatak1 {
         numbers.add(8);
         numbers.add(9);
 
-        System.out.println("Unesite pozicijiu od 0 do 9: ");
+        System.out.print("Unesite pozicijiu od 0 do 9: ");
         int pozicija = s.nextInt();
 
-        System.out.println("Unesite novu vrednost: " );
+        System.out.print("Unesite novu vrednost: " );
         int novaVrednost = s.nextInt();
         numbers.set(pozicija, novaVrednost);
 

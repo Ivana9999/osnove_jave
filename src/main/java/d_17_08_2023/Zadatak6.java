@@ -6,16 +6,16 @@ public class Zadatak6 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        System.out.println("Unesite a: ");
+        System.out.print("Unesite a: ");
         int a = s.nextInt();
 
-        System.out.println("Unesite b: ");
+        System.out.print("Unesite b: ");
         int b = s.nextInt();
 
-        System.out.println("Unesite c: ");
+        System.out.print("Unesite c: ");
         int c = s.nextInt();
 
-        System.out.println("Unesite d: ");
+        System.out.print("Unesite d: ");
         int d = s.nextInt();
 
         String p = "#";
@@ -45,13 +45,5 @@ public class Zadatak6 {
         }
 
         System.out.println("String p ima vrednost = : " + p);
-
-
-
-
-
-
-
-
     }
 }

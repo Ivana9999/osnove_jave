@@ -7,18 +7,18 @@ public class Zadatak9 {
         Scanner s = new Scanner(System.in);
 
         System.out.print("Unesite broj A: ");
-      int a =s.nextInt();
+        int a = s.nextInt();
 
         System.out.print("Unesite broj B: ");
-       int b = s.nextInt();
+        int b = s.nextInt();
 
-       for (int i = 1; i<=10; i++) {
-           if (a != i && b != i) {
-               System.out.print(i+ ", ");
-           }
+        for (int i = 1; i <= 10; i++) {
+            if (a != i && b != i) {
+                System.out.print(i + ", ");
 
-       }
-       }
+            }
 
+        }
     }
+}
 

@@ -23,7 +23,7 @@ Scanner s = new Scanner(System.in);
     if (suma + broj > 100) {
         System.out.println("Prekoracenje! Kraj peograma. Sracunata suma je " + suma);
     }
-suma += broj;
+suma = suma+broj;
 }
 
 

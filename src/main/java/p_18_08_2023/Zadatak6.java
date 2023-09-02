@@ -5,18 +5,18 @@ public class Zadatak6 {
     public static void main(String[] args) {
 Scanner s = new Scanner(System.in);
 
-        System.out.println("Uneti M: ");
+        System.out.print("Uneti M: ");
         int M = s.nextInt();
 
-        System.out.println("Uneti N: ");
+        System.out.print("Uneti N: ");
         int N = s.nextInt();
 
          for(int i = M; i <=N; i++) {
-             System.out.print(i);
+             System.out.print(i + " , ");
 
-             if (i <=N ) {
-                 System.out.print(" , ");
              }
+
          }
+
     }
-}
+

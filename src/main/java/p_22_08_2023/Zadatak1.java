@@ -9,14 +9,16 @@ public class Zadatak1 {
 
         int broj = 0;
 
-        while (broj < 10 || broj  >50) {
+        while (broj < 10 || broj > 50) {
             System.out.print("Unesite broj: ");
             broj = s.nextInt();
-            System.out.println("Greska: broj nije u opsegu od 10 do 50: ");
+
+            if (broj < 10 || broj > 50) {
+                System.out.println("Greska: broj nije u opsegu od 10 do 50: ");
+
+            }
+            System.out.println("KRAJ");
 
         }
-        System.out.println("KRAJ");
-
     }
 }
-

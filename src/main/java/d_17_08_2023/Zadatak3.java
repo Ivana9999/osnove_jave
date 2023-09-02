@@ -7,13 +7,13 @@ public class Zadatak3 {
         Scanner s = new Scanner(System.in);
 
 
-        System.out.println("Uneti actual url: ");
+        System.out.print("Uneti actual url: ");
         String a = s.next();
 
-        System.out.println("Uneti expected url: ");
+        System.out.print("Uneti expected url: ");
         String b = s.next();
 
-        System.out.println("Uneti error: ");
+        System.out.print("Uneti error: ");
         String c = s.next();
 
 

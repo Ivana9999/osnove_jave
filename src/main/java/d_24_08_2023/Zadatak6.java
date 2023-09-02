@@ -1,5 +1,7 @@
 package d_24_08_2023;
 
+import java.util.ArrayList;
+
 public class Zadatak6 {
     public static void main(String[] args) {
 
@@ -36,15 +38,44 @@ public class Zadatak6 {
 //        Assertion Error: https://cms.demo.katalon.com/test/ expected 200 but got 404
 
 
+        ArrayList <String> linkovi = new ArrayList<>();
+        ArrayList <Integer> expectedStatusCodes = new ArrayList<>();
+        ArrayList <Integer> actualStatusCodes = new ArrayList<>();
 
+        linkovi.add("https://cms.demo.katalon.com/cart/");
+        linkovi.add("https://cms.demo.katalon.com/shop/");
+        linkovi.add("https://cms.demo.katalon.com/account/");
+        linkovi.add("https://cms.demo.katalon.com/cart/");
+        linkovi.add("https://cms.demo.katalon.com/test/");
 
+     expectedStatusCodes.add(200);
+     expectedStatusCodes.add(200);
+     expectedStatusCodes.add(404);
+     expectedStatusCodes.add(204);
+     expectedStatusCodes.add(200);
 
+     actualStatusCodes.add(200);
+     actualStatusCodes.add(200);
+     actualStatusCodes.add(400);
+     actualStatusCodes.add(200);
+     actualStatusCodes.add(404);
 
+   boolean errorFound = false;
 
+   for (int i = 0; i < linkovi.size(); i++) {
+       String link = linkovi.get(i);
+       int expectedStatusCode = expectedStatusCodes.get(i);
+       int actualStatusCode = actualStatusCodes.get(i);
 
-
-
-
+       if (expectedStatusCode != actualStatusCode) {
+           System.out.println("Assertion Error: Link " + link + " expected status code "
+                   + expectedStatusCode + " but got " + actualStatusCode);
+           errorFound = true;
+       }
+   }
+   if (!errorFound) {
+       System.out.println("Vrednosti se poklapaju ");
+   }
 
 
 

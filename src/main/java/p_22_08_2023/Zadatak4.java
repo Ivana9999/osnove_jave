@@ -31,13 +31,16 @@ public class Zadatak4 {
         while (!akcija.equals("play")) {
             System.out.print("Unesite akciju: ");
             akcija = s.next();
+
             if (akcija.equals("pojacaj")) {
                 jacinaZvuka += 10;
+
                 if (jacinaZvuka > 100) {
                     jacinaZvuka = 100;
                 }
             } else if (akcija.equals("smanji")) {
                 jacinaZvuka -= 10;
+
                 if (jacinaZvuka < 0) {
                     jacinaZvuka = 0;
                 }

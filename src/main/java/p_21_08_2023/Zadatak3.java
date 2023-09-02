@@ -4,19 +4,19 @@ public class Zadatak3 {
     public static void main(String[] args) {
 
 
-        String s = "...";
+        String triTacke = "...";
 
         for (int i = 1; i <= 10; i++) {
 
             if (i % 2 == 0) {
 
-               s = s + i;
+               triTacke = triTacke + i;
             } else {
-                s = i + s;
+                triTacke = i + triTacke;
             }
 
         }
-        System.out.println(s);
+        System.out.println(triTacke);
 
 
     }
