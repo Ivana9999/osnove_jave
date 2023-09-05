@@ -23,7 +23,7 @@ public class Zadatak10 {
         int b = s.nextInt();
 
         for ( int i = 0; i <= 20; i++) {
-            if (i >= 5 && i <= 10) {
+            if (i >= a && i <= b) {
                 System.out.print(" _ ");
             }  else  {
                 System.out.print(" * ");
