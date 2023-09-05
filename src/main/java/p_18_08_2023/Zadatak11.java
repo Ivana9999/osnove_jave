@@ -23,14 +23,13 @@ public class Zadatak11 {
        int vremeVidea = s.nextInt();
 
         int procenatPogledano = (vremeVidea * 100) / duzinaVidea;
-        int brojZvezdica = (procenatPogledano * 100) / 100;
-        int brojCrtica = 100 - brojZvezdica;
 
-        for (int i = 0; i < brojZvezdica; i++) {
-            System.out.print("*");
-        }
-        for (int i = 0; i < brojCrtica; i++) {
-            System.out.print("-");
+        for (int i = 0; i < 100; i++) {
+            if (i < procenatPogledano) {
+                System.out.print("*");
+            } else {
+                System.out.print("_");
+            }
         }
 
 
