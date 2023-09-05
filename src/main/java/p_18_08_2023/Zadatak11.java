@@ -16,22 +16,22 @@ public class Zadatak11 {
 
 
         Scanner s = new Scanner(System.in);
-//
-//        System.out.print("Unesite duzinu videa (s): ");
-//        int duzinaVidea = s.nextInt();
-//        System.out.print("Unesite trenutno vreme videa (s): ");
-//       int vremeVidea = s.nextInt();
-//
-//        int procenatPogledano = (vremeVidea * 100) / duzinaVidea;
-//        int brojZvezdica = (procenatPogledano * 100) / 100;
-//        int brojCrtica = 100 - brojZvezdica;
-//
-//        for (int i = 0; i < brojZvezdica; i++) {
-//            System.out.print("*");
-//        }
-//        for (int i = 0; i < brojCrtica; i++) {
-//            System.out.print("-");
-//        }
+
+        System.out.print("Unesite duzinu videa (s): ");
+        int duzinaVidea = s.nextInt();
+        System.out.print("Unesite trenutno vreme videa (s): ");
+       int vremeVidea = s.nextInt();
+
+        int procenatPogledano = (vremeVidea * 100) / duzinaVidea;
+        int brojZvezdica = (procenatPogledano * 100) / 100;
+        int brojCrtica = 100 - brojZvezdica;
+
+        for (int i = 0; i < brojZvezdica; i++) {
+            System.out.print("*");
+        }
+        for (int i = 0; i < brojCrtica; i++) {
+            System.out.print("-");
+        }
 
 
     }
