@@ -5,7 +5,7 @@ public class Zadatak3 {
 //    koristeci metode koje smo definisali.
 //*  *  *
 //  *  *
-//   *
+//    *
 
     public static void main(String[] args) {
 
