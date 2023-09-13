@@ -46,6 +46,13 @@ public class Zadatak3 {
 
 
         Transakcija transakcija = new Transakcija (124436, racun, racun1 );
+
+        racun.stampaj();
+        racun1.stampaj();
+
+        transakcija.izvrsiTransakciju(200);
+        racun.stampaj();
+        racun1.stampaj();
         transakcija.stampaj();
 
 
